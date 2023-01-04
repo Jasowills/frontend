@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchWorkouts = async () => {
-      const response = await fetch('/api/workout')
+      const response = await fetch('https://workoutbuddy-smcl.onrender.com/api/workout')
       const json = await response.json()
 
       if (response.ok) {
