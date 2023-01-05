@@ -109,8 +109,8 @@ input.error {
   .workout-details {
     background: #fff;
     border-radius: 4px;
-    margin:  auto;
-    padding: 0;
+    margin: 10px auto;
+    padding: 10px;
     position: relative;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
     width: 100%;
