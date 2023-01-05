@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { useWorkoutsContext } from '../hooks/useWorkoutsContext'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const WorkoutForm = () => {
   const { dispatch } = useWorkoutsContext()
@@ -35,8 +37,10 @@ const WorkoutForm = () => {
       setLoad('')
       setReps('')
       dispatch({type: 'CREATE_WORKOUT', payload: json})
+      toast.success('Added Successfully 🙂 !')
     }
 
+    
   }
 
   return (
@@ -68,6 +72,7 @@ const WorkoutForm = () => {
       />
 
       <button>Add Workout</button>
+      <ToastContainer />
       {error && <div className="error">{error}</div>}
     </form>
   )

@@ -1,5 +1,6 @@
 import { useWorkoutsContext } from '../hooks/useWorkoutsContext'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 
 const WorkoutDetails = ({ workout }) => {
@@ -13,7 +14,9 @@ const WorkoutDetails = ({ workout }) => {
 
     if (response.ok) {
       dispatch({type: 'DELETE_WORKOUT', payload: json})
+      toast.success('Deleted Successfully 🙂 !')
     }
+   
   }
 
   return (
@@ -23,6 +26,7 @@ const WorkoutDetails = ({ workout }) => {
       <p><strong>Number of reps: </strong>{workout.reps}</p>
       <p>{formatDistanceToNow(new Date(workout.createdAt), { addSuffix: true })}</p>
       <span className="material-symbols-outlined" onClick={handleClick}>delete</span>
+      <ToastContainer />
     </div>
   )
 }
