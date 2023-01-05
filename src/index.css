@@ -109,18 +109,15 @@ input.error {
   .workout-details {
     background: #fff;
     border-radius: 4px;
-    margin: 10px;
-    padding: 10px;
-    /* position: relative; */
+    margin: 10px auto;
+    padding: 20px;
+    position: relative;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
     width: 100%;
   }
   .home {
     display: grid;
-    grid-template-columns: 2fr;
+    grid-template-columns: 1fr;
     gap: 10px;
-  }
-  header .container{
-    width: 100%;
   }
 }
