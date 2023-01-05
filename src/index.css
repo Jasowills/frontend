@@ -117,15 +117,15 @@ input.error {
   .workout-details {
     background: #fff;
     border-radius: 4px;
-    margin: 20px auto;
-    padding: 20px;
+    margin: 10px auto;
+    padding: 10px;
     position: relative;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
     width: 100%;
   }
   .home {
     display: grid;
-    grid-template-columns: 4fr;
+    grid-template-columns: 3fr;
     gap: 80px;
   }
 }
