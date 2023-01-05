@@ -118,6 +118,6 @@ input.error {
   .home {
     display: grid;
     grid-template-columns: 2fr;
-    gap: 50px;
+    gap: 10px;
   }
 }
